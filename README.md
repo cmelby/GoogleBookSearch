@@ -11,12 +11,15 @@ This application was configured for and deployed to Heroku at: https://quiet-lak
  
 ## Technologies Used
 - React: Used to dynamically render components on browser and initiate functionality of the game based on user inputs.
-- MongoDB: Used as a templating engine for ul HTML snippets that hold the task cards, and separate the generation of the        different HTML from the rest of the JavaScript for cleaner and more organozed code.
-- Morgan: Request logger middleware for Node. js that simplifies the process of logging requests to the applicaiton application.
-- Express.js - Used for application set up of middle ware for end point connection between the front end and backend.
-- Node.js - Used for package managment and to execute JavaScript code to build the command line tool for server-side scripting.
-- Git - Version control system to track changes to source code.
-- GitHub - Hosts repository that can be deployed to GitHub Pages.
+
+- MongoDB: MongoDB is an object-oriented, simple, dynamic, and scalable NoSQL database. It is based on the NoSQL document store model. MongoBD in this application is used as the main data store for product and user information. 
+- Morgan: Request logger middleware for Node.js that easily logs requests, errors, and more to the console. It’s easy to use, but still powerful and customizable.
+- Express-session: Express. js uses a cookie to store a session id (with an encryption signature) in the user's browser and then, on subsequent requests, uses the value of that cookie to retrieve session information stored on the server. Express-session reads and writes cookies directly on the req/res.
+- Mongoose: Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node. js. It manages relationships between data, provides schema validation, and is used to translate between objects in code and the representation of those objects in MongoDB
+- Express.js: Express. js is a Node. js web application server framework, designed for building single-page, multi-page, and hybrid web applications. Used in this application to set middle ware for end point connection between the front end and backend.
+- Node.js: Used for package managment and to execute JavaScript code to build the command line tool for server-side scripting.
+- Git:  Version control system to track changes to source code.
+- GitHub: Hosts repository that can be deployed to GitHub Pages.
  
 ## Code Snippet
 The folowing code snippet handles the data response from the api request made to google books thought our API.getBooks(). During the mounting lifecycle the api request is made and we map the response setting its within our react card component that is then genereated on the page during the render lifecyle. 
